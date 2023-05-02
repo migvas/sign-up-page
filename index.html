@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap"
+        rel="stylesheet">
+    <script src="./script.js" defer></script>
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <div id="logo">
+        <img src="./images/odin-lined.png">
+        <div>ODIN</div>
+    </div>
+    <div id="signup">
+        <div id="title">Sign Up Now!</div>
+        <form action="test" method="post">
+        <div id="input-boxes">
+            <div class="inputs">
+                <label for="first_name">FIRST NAME</label>
+                <input type="text" id="first_name" name="first_name" required>
+            </div>
+
+            <div class="inputs">
+                <label for="last_name">LAST NAME</label>
+                <input type="text" id="last_name" name="last_name" required>
+            </div>
+
+            <div class="inputs">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="inputs">
+                <label for="phone">PHONE NUMBER</label>
+                <input type="text" id="phone" name="phone" pattern="^\d{9}$" title="Please insert a valid 9 digit phone number. Ex: 930000000" required>
+            </div>
+
+
+            <div class="inputs">
+                <label for="password">PASSWORD</label>
+                <input class="passwords" type="password" id="password" name="password" required>
+                <div id="error-message">* Passwords do not match</div>
+            </div>
+
+
+            <div class="inputs">
+                <label for="confirm_password">CONFIRM PASSWORD</label>
+                <input class="passwords" type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+        </div>
+            <button id="submit">Sign up for free</button>
+        </form> 
+        <div>Already have an account? <a id="login" href="" target=”_blank”>Log in</a></div>
+    </div>
+    <div id="footer">
+        <div id="im-author">
+            Photo by <a href="https://unsplash.com/@snapsbyclark" target=”_blank”>Clark Van Der Beken</a> on <a href="https://unsplash.com/" target=”_blank”>Unsplash</a>
+        </div>
+        <div id="creator">
+            <div>Created By Miguel Vasques</div>
+            <a href="https://github.com/migvas" target=”_blank”><img id="footer-im" src="./images/github-mark.png"></a>
+        </div>
+    </div>
+</body>
+
+</html>
